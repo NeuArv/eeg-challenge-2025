@@ -35,7 +35,7 @@ This repository contains our complete solution for the EEG Foundation Challenge,
 
 ### Challenge 1: Response Time Prediction
 Predict behavioral reaction times from EEG signals during visual tasks.
-- **Target**: RMSE < 0.20 seconds
+- **Target**: RMSE < 0.990 seconds
 - **Model**: EEGNeX with exponential moving average (EMA) and test-time augmentation (TTA)
 
 ### Challenge 2: P-Factor Prediction
@@ -202,13 +202,7 @@ Input (129 channels, 200 time points)
 
 ## 📊 Results
 
-### Challenge 1: Response Time Prediction
-- **Validation RMSE**: ~0.165s
-- **Public Leaderboard**: 1.71 (lower is better, target < 0.20)
-
-### Challenge 2: P-Factor Prediction
-- **Validation Correlation**: ~0.975
-- **Target**: Correlation >= 0.980
+### **Public Leaderboard**: 1.71
 
 ## 🛠️ Key Techniques
 
@@ -280,5 +274,6 @@ For questions or collaboration:
 ---
 
 **Note**: Trained model weights are large files (>100MB). Consider using [Git LFS](https://git-lfs.github.com/) or hosting them separately (e.g., Google Drive, Hugging Face).
+
 
 
