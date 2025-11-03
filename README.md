@@ -6,6 +6,11 @@
 
 Solution for the [EEG Foundation Challenge at NeurIPS 2025](https://eeg2025.github.io/), achieving competitive performance on both Challenge 1 (response time prediction) and Challenge 2 (P-factor prediction).
 
+## 👥 Team
+
+- **Alice Wong** - Developer
+- **Arvind Gyandatt Mishra** - Developer
+
 ## 📋 Table of Contents
 
 - [Overview](#overview)
@@ -168,26 +173,26 @@ python utils/local_scoring.py \
 ### Challenge 2: Multi-Model Ensemble
 ```
 Input (129 channels, 200 time points)
-    ↓
+                 ↓
 ┌───────────────────────────────────────┐
 │  Channel Selection (optional)         │
-└───────────┬───────────────────────────┘
-            ↓
-    ┌───────┴───────┐─────────────────┐
+└───────────────────┬───────────────────┘
+                    ↓
+    ┌───────────────┴─────────────────┐
     │               │                 │
 ┌───▼───┐      ┌────▼────┐      ┌─────▼─────┐
 │EEGNeX │      │Transform│      │  ResNet   │
 │  CNN  │      │   er    │      │    1D     │
 └───┬───┘      └────┬────┘      └─────┬─────┘
     │               │                 │
-    └───────┬───────┴─────────────────┘
-            ↓
-    ┌───────▼───────┐
-    │ Fusion Network│
-    │  (MLP layers) │
-    └───────┬───────┘
-            ↓
-    P-factor prediction
+    └───────────────┴─────────────────┘
+                    ↓
+            ┌───────▼───────┐
+            │ Fusion Network│
+            │  (MLP layers) │
+            └───────┬───────┘
+                    ↓
+           P-factor prediction
 ```
 
 **Key Features**:
@@ -228,8 +233,19 @@ Input (129 channels, 200 time points)
 
 ## 📚 Citation
 
-If you find this work helpful, please cite the competition paper:
+If you find this work helpful, please cite:
 
+```bibtex
+@misc{eeg_challenge_solution_2025,
+  title={EEG Foundation Challenge Solution: Deep Learning for Response Time and P-Factor Prediction},
+  author={Arvind Gyandatt Mishra and Alice Wong},
+  year={2025},
+  publisher={GitHub},
+  howpublished={\\url{https://github.com/NeuArv/eeg-challenge-2025}}
+}
+```
+
+Competition paper:
 ```bibtex
 @article{eeg_challenge_2025,
   title={EEG Foundation Challenge at NeurIPS 2025},
@@ -255,6 +271,7 @@ For questions or collaboration:
 
 ## 🙏 Acknowledgments
 
+- **Alice Wong** - Co-contributor and teammate, for collaborative work on model development and experimentation
 - Competition organizers and the NeurIPS 2025 team
 - [Braindecode](https://braindecode.org/) for EEG deep learning tools
 - [MNE-Python](https://mne.tools/) for signal processing utilities
@@ -263,4 +280,5 @@ For questions or collaboration:
 ---
 
 **Note**: Trained model weights are large files (>100MB). Consider using [Git LFS](https://git-lfs.github.com/) or hosting them separately (e.g., Google Drive, Hugging Face).
+
 
