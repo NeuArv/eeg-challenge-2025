@@ -86,7 +86,7 @@ eeg-challenge-2025/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/eeg-challenge-2025.git
+   git clone https://github.com/NeuArv/eeg-challenge-2025.git
    cd eeg-challenge-2025
    ```
 
@@ -173,14 +173,14 @@ Input (129 channels, 200 time points)
 │  Channel Selection (optional)         │
 └───────────┬───────────────────────────┘
             ↓
-    ┌───────┴───────┐
-    │               │
+    ┌───────┴───────┐─────────────────┐
+    │               │                 │
 ┌───▼───┐      ┌────▼────┐      ┌─────▼─────┐
 │EEGNeX │      │Transform│      │  ResNet   │
 │  CNN  │      │   er    │      │    1D     │
 └───┬───┘      └────┬────┘      └─────┬─────┘
-    │               │                  │
-    └───────┬───────┴──────────────────┘
+    │               │                 │
+    └───────┬───────┴─────────────────┘
             ↓
     ┌───────▼───────┐
     │ Fusion Network│
