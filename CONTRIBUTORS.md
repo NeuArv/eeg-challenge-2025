@@ -4,8 +4,8 @@ This project was developed as part of the NeurIPS 2025 EEG Foundation Challenge.
 
 ## Core Team
 
-### [Arvind Gyandatt Mishra]
-- **Role**: Lead Developer & Model Architecture
+### Arvind Gyandatt Mishra
+- **Role**: Developer & Model Architecture
 - **Contributions**: 
   - Overall project architecture and implementation
   - Challenge 1 model development (EEGNeX with EMA/TTA)
@@ -15,7 +15,7 @@ This project was developed as part of the NeurIPS 2025 EEG Foundation Challenge.
   - Submission code and deployment
 
 ### Alice Wong
-- **Role**: Co-contributor & Teammate
+- **Role**: Developer, Co-contributor & Teammate
 - **Contributions**:
   - Collaborative model development and experimentation
   - Challenge 2 approach and methodology
@@ -41,4 +41,5 @@ Interested in contributing? See [CONTRIBUTING.md](CONTRIBUTING.md) for guideline
 For questions about contributions:
 - Open an issue on GitHub
 - See [README.md](README.md) for contact information
+
 
