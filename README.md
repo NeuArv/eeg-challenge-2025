@@ -272,8 +272,3 @@ For questions or collaboration:
 - OpenNeuro for hosting the dataset
 
 ---
-
-**Note**: Trained model weights are large files (>100MB). Consider using [Git LFS](https://git-lfs.github.com/) or hosting them separately (e.g., Google Drive, Hugging Face).
-
-
-
