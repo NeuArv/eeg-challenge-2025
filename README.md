@@ -8,8 +8,8 @@ Solution for the [EEG Foundation Challenge at NeurIPS 2025](https://eeg2025.gith
 
 ## 👥 Team
 
-- **Alice Wong** - Developer
 - **Arvind Gyandatt Mishra** - Developer
+- **Alice Wong** - Developer
 
 ## 📋 Table of Contents
 
@@ -272,3 +272,4 @@ For questions or collaboration:
 - OpenNeuro for hosting the dataset
 
 ---
+
